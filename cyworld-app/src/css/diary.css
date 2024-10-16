@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "NanumJungHagSaeng";
+    font-weight: 50;
+    src: url("./font/NanumJungHagSaeng.ttf");
+}
+
+.diary-icon {
+    background-image: url("./문서icon.png");
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.diary-box, .diary-menu-box {
+    display: flex;
+    flex-direction: column;
+    font-family: "NanumJungHagSaeng";
+    font-size: 1.2rem;
+}
+
+.diary-menu .entire {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.diary-menu .element {
+    display: flex;
+    align-items: center;
+}
+
+.diary-menu-box {
+    height: 100%;
+    padding: 5px 10px;
+    justify-content: space-between;
+}
+
+.calendar {
+    height: 3rem;
+    border: 1px solid lightgray;
+    margin-bottom: 0.7rem;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.calendar-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px dashed gray;
+    padding: 0 15px;
+}
+
+.calendar-left span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 145, 0);
+}
+
+.calendar-right {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.calendar-right span {
+    display: inline-block;
+    width: 16.5px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.diary-content {
+    margin: 30px 0;
+    border: 1px solid lightgray;
+    padding: 10px 15px;
+}
+
+.diary-entry {
+    padding: 10px 0;
+}
+
+.diary-text {
+    padding: 20px 0;
+}
+
+.diary-date {
+    margin-bottom: 1rem;
+    color: orange;
+    font-weight: 600;
+}
+
+.diary-comments {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(211, 211, 211, 0.5);
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.diary-comments-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-input {
+    margin-bottom: 3px;
+}
+
+.comment-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-input > input {
+    width: 70%;
+}
+
+.name-input span {
+    margin-right: 5px;
+}
+
+.name-input span, .comment-input span {
+    color: gray;
+    font-weight: 600;
+}
+
+.diary_comment_name {
+    color: rgb(255, 145, 0);
+    font-weight: 600;
+}
+
+.diary-comments-list button {
+    margin-left: 5px;
+}
+
+.diary-comments-list {
+    margin-top: 20px;
+}
+
+.diary-btn-area {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.diary-btn-area > span {
+    margin-left: 10px;
+    color: orange;
+    font-weight: 600;
+}
+
+.diary-btn-area > span:hover, .pagination span:hover {
+    cursor: pointer;
+    color: rgb(253, 215, 0);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination span {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 10px;
+    color: gray;
+}

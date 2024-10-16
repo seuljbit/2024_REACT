@@ -1,0 +1,103 @@
+.main-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.miniroom {
+    margin-bottom: 2.5rem;
+}
+
+.areaTitle {
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.areaTitle span {
+    font-size: small;
+    font-weight: bold;
+    color: rgb(255, 145, 0);
+}
+
+.miniroomimg {
+    width: 100%;
+    height: 11rem;
+    margin: 0;
+    margin-top: 1%;
+    padding: 0;
+    border: 1px solid lightgray;
+    background-image: url("../image/miniroom.jpg");
+    box-sizing: border-box;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-inputArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    background-color: rgb(239, 239, 239);
+}
+
+.comments-inputArea span,
+#name {
+    font-size: small;
+    font-weight: bold;
+    color: rgb(255, 145, 0);
+}
+
+.comments-inputArea input {
+    width: 70%;
+    margin: 0;
+    padding: 3px;
+}
+
+.comments-list > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.comments-list > li {
+    margin: 5px 0;
+    padding: 3px 0;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.658);
+}
+
+.comments-list > ul > li > span {
+    font-size: 0.9rem;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+    background-image: url("../image/프로필사진.PNG");
+    background-size: cover;
+}
+
+.history > p {
+    margin: 30px 0 5px 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.history > p > span {
+    font-size: 10px;
+}
+
+.profile-name p {
+    margin: 10px 0 5px 0;
+    padding: 0;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#select {
+    width: 100%;
+    margin-top: 0;
+}

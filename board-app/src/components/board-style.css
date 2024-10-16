@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("./font/Montserrat/static/Montserrat-Medium.ttf");
+}
+@font-face {
+    font-family: "NotoSans";
+    src: url("./font/Noto_Sans_KR/static/NotoSansKR-Regular.ttf");
+}
+.titleLink h1, table th, .titleArea span {
+    font-family: "Montserrat";
+}
+
+/* 전체 레이아웃 */
+/* boardHome > homeTitle > titleLink */
+/* boardHome > fullbox > content */
+.boardHome {
+    font-size: 1.1rem;
+    font-family: "NotoSans";
+    padding: 5px 20px;
+    color: #2D3235;
+}
+.homeTitle {
+    border-bottom: 1px solid lightgray;
+}
+a {
+    text-decoration: none;
+    color: inherit; /* 상속된 폰트 색상을 유지 */
+}
+.titleLink h1 {
+    text-decoration: none;
+    color: black; /* 원하는 타이틀 색상 */
+    font-size: 3rem;
+}
+.titleLink h1:hover {
+    color: #2D3235;
+}
+
+.fullbox {
+    padding: 0 30px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+
+
+/* 전체 버튼 css */
+.btnarea {
+    display: flex;
+    margin: 30px 0;
+}
+.btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #8e8e8e;
+    background-color: #8e8e8e;
+    color: white;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+
+/* boardList */
+/* boardList > tablearea > table > thead > tr > th */
+/* boardList > tablearea > table > tbody > tr > td */
+/* boardList > listbtn btnarea >  writingBtn btn */
+.tablearea {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.tablearea > table {
+    width: 90%;
+    margin: 30px 0;
+    position: relative;
+}
+
+table th {
+    height: 50px;
+    background-color: #8e8e8e;
+    color: white;
+    font-size: medium;
+}
+
+.tablearea > table > tbody > tr > td {
+    height: 45px;
+    font-weight :500;
+}
+.tableid {
+    width: 10%;
+}
+.tablearea a {
+    text-decoration: none;
+    color: #2D3235; /* 리스트 제목 기본 색상 */
+}
+/* 리스트 제목 hover 시 색상 변경 */
+.tablearea a:hover {
+    font-weight: bold; /* 리스트 제목 hover 시 색상 */
+}
+.tablewriter, .tabledate {
+    width: 18%;
+}
+
+.listbtn {
+    justify-content: center;
+}
+.listbtn > .writingBtn {
+    width: 300px;
+    height: 50px;
+}
+.listbtn > .writingBtn > span {
+    font-size: 1.3rem;
+    letter-spacing : 7px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+/* BoardDetail, BoardWrite, BoardMidify */
+/* BoardDetail > inner > contents > titleArea > detail */
+/* BoardWrite, BoardMidify > inner > titleArea > subtitle > contents*/
+
+.contents {
+    position: relative;
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 30px;
+    margin: 30px 0;
+    box-sizing: border-box;
+}
+
+.titleArea span {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+/* BoardDetail */
+.detail {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+.detail > p { /* 작성자, 날짜 */
+    font-size : 1.2rem;
+    font-weight: bold;
+}
+
+.boardContent { /* 게시물 내용 박스 */
+    padding-top: 30px;
+}
+.detailBtnArea {
+    display: flex;
+    justify-content: space-between;
+}
+.detailBtnArea > .left-area > button {
+    margin-right: 5px;
+}
+
+
+/* BoardWrite, BoardMidify */
+.subtitle {
+    margin-top: 20px;
+}
+.writecontents {
+    margin-top: 30px;
+}
+#title, #writer, #text {
+    font-size: medium;
+    border: 1px solid #e3e3e3; /* 기본 테두리 */
+    padding: 10px;
+    outline: none; /* 기본 아웃라인 제거 */
+    transition: border-color 0.3s ease; /* 부드러운 색상 전환 효과 */
+}
+#title:focus, #writer:focus, #text:focus {
+    border-color: gray; 
+}
+
+.write-top{
+    width: 100%;
+    position: relative;
+    padding: 10px 0 20px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+.write-top > input {
+    height: 30px;
+    padding: 5px;
+}
+.write-title {
+    width: calc(100% / 1.25);
+    background-color: #e3e3e3;
+}
+.write-writer {
+    width: calc((100% - (100% / 1.2)));
+}
+
+.write-bottom {
+    width: 100%;
+    padding: 10px 0 20px 0;
+    position: relative;
+    display: flex;
+}
+#text {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+}
+
+
+

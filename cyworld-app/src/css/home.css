@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "NanumJungHagSaeng";
+    font-weight: 50;
+    src: url("./font/NanumJungHagSaeng.ttf");
+}
+
+.cy-home {
+    position: relative;
+    width: 974px;
+    height: 465px;
+    background-image: url("../image/배경.png");
+    padding: 25px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.whole-box{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage {
+    width: 607px;
+    height: 400px;
+    background-image: url("../image/틀.png");
+    padding: 7px 5px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.page-left {
+    width: 165px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.todayArea {
+    margin-bottom: 0.6rem;
+}
+.todayArea > span {
+    font-size: 10px;
+    margin-left: 2%;
+}
+.profile-box {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.today {
+    color: orangered;
+    font-weight: bold;
+}
+.em {
+    color: orange;
+}
+
+.page-right {
+    width: calc(100% - 175px);
+    height: 100%;
+}
+.content-box {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    max-height: calc(100% - 40px);
+}
+
+.homepage-title-area {
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+
+.homepage-title {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "NanumJungHagSaeng";
+}
+
+.home-nav {
+    position: absolute;
+    top: 6%;
+    left: 61.3%;
+}
+
+/* 기본적으로 a 태그의 밑줄 제거 */
+a {
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+/* Link 태그와 a 태그에서 밑줄 제거 */
+.menu a, .menu a:link, .menu a:visited, .menu a:hover, .menu a:active {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 글자 색상 상속 */
+}
+
+/* 메뉴 기본 스타일 */
+.menu {
+    text-decoration: none;
+    width: 57px;
+    background-color: rgb(255, 145, 0);
+    border: 1px solid gray;
+    border-radius: 10%;
+    border-left: none;
+    color: white;
+    margin-top : 7%;
+    text-align: center;
+    padding: 3%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: "NanumJungHagSaeng";
+}
+
+/* 선택된 메뉴의 스타일 */
+.menu.selected {
+    background-color: white;
+    color: black;
+}
+
+.menu.selected span {
+    color: black;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+
+.sub-window {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-controls {
+    width: 100%;
+    background-color: rgb(241, 243, 244);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.music_title_area {
+    width: 90%;
+    background-color: rgb(241, 243, 244);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 10px 15px;
+}
+
+.music_title {
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden; /* 넘칠 경우 숨김 */
+    position: relative;
+}
+.music_title > div {
+    display: flex;
+    align-items: center;
+    animation: scroll 11s linear infinite;
+    padding: 3px;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.cd-icon {
+    width: 15px;
+    height: 15px;
+    background-image: url("./cd_icon.png");
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.music_title span {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+audio {
+    width: 90%;
+    height: 32px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: -5px;
+}

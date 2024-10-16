@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "NerkoOne";
+    font-weight: 50;
+    src: url("../Nerko_One/NerkoOne-Regular.ttf");
+  }
+@font-face {
+    font-family: "NanumJungHagSaeng";
+    font-weight: 50;
+    src: url("../Nerko_One/NanumJungHagSaeng.ttf");
+  }
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: auto;
+}
+.container > div :nth-last-of-type(1) {
+    position: relative;
+    align-content: center;
+}
+
+.title {
+    font-family: "NerkoOne";
+    font-size: 75px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    color: rgb(255, 136, 0);
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.toDoListCreate, .result{
+    width: 90%;
+    margin : 30px 0;
+    padding: 15px 0;
+    position: relative;
+}
+.toDoListCreate > input {
+    height: 40px;
+    margin-right: 5px;
+    border: 0.7px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "NanumJungHagSaeng";
+    font-size: 25px;
+}
+
+.todoselect {
+    width: calc(100% / 7);
+}
+.todotext {
+    width: calc(100% / 5);
+}
+.toDoListCreate > button {
+    width: calc(100% / 8);
+    height: 40px;
+    font-size: 25px;
+    font-family: "NerkoOne";
+    text-align: center;
+    border-radius: 50px;
+}
+button {
+    border: 1px solid orange;
+    background-color: orange;
+    color: white;
+    word-spacing: 5%;
+}
+
+
+.mainBox {
+    width: 90%;
+    position: relative;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250, 240, 220);
+}
+.main {
+    width: 80%;
+    position: relative;
+}
+.mainBox > .main > .box > input[checkbox] {
+    width: 50px;
+    margin: 0;
+    padding: auto;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    margin: 0 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.box > button {
+    width: 3rem;
+    height: 2.5rem;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+}
+.box > p {
+    margin-left: 15px;
+}
+.box span, .text {
+    font-family: "NanumJungHagSaeng";
+    font-size: 30px;
+}
+
+.textBox > input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    font-size: large;
+    border-radius: 50px;
+}
+
+.textBox {
+    display: flex;
+    align-items: center
+}
+
+.text {
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.textBox > .checkbox {
+    position: relative;
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(255, 217, 0);
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-right: 15px;
+}
+
+.textBox > .checkbox:checked {
+    background-color: rgb(255, 217, 0);
+}
+
+.textBox > .checkbox:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s;
+    content: '✓';
+    color: white;
+    font-weight: bolder;
+}
+
+.textBox > .checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1); /* 체크된 상태에서 체크 표시 */
+    
+}
